@@ -45,4 +45,6 @@ e	:longfox_ud:
 f	:longfox_ul:
 g	:longfox_ur:
 D	:doge:
-B	:party_parrot:
+P	:party_parrot:
+T	:tux:
+R	:realtek:
