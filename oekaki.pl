@@ -25,7 +25,7 @@ foreach(<STDIN>) {
 	chomp;
 	s/(.)/&cvt($1)/eg;
 	s/.$//;
-	say;
+	if($_ eq "") { say "\x{200B}" } else { say }
 }
 
 __DATA__
