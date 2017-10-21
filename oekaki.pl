@@ -2,7 +2,6 @@
 use strict;
 use warnings;
 use utf8;
-use feature 'say';
 binmode(STDOUT,":utf8");
 binmode(STDIN, ":utf8");
 binmode(STDERR,":utf8");
@@ -25,7 +24,7 @@ foreach(<STDIN>) {
 	chomp;
 	s/(.)/&cvt($1)/eg;
 	s/.$//;
-	if($_ eq "") { say "\x{200B}" } else { say }
+	if($_ eq "") { print "\x{200B}\n" } else { print "$_\n" }
 }
 
 __DATA__
